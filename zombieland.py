@@ -1,11 +1,7 @@
 import time
 
 def displayIntro():
-    print ('You are stuck in ')
-    print ('you see two caves. In one cave, the dragon is friendly')
-    print ('and will share his treasure with you. The other dragon')
-    print ('is greedy and hungry, and will eat you on sight.')
-    print
+    print ('choose a cave')
     
 def chooseCave():
     cave = ''
@@ -24,15 +20,36 @@ def checkCave(chosenCave):
         chosenCave = raw_input()
         if chosenCave == "1":
             print ('you chose cave 2a')
+            chosenCave = raw_input()
+            if chosenCave == "1":
+                print ('you chose cave 3a')
+            elif chosenCave == "2":
+                print ('you chose cave 3b')
         elif chosenCave == "2":
             print ('you chose cave 2b')
+            chosenCave = raw_input()
+            if chosenCave == "1":
+                print ('you chose cave 3c')
+            elif chosenCave == "2":
+                print ('you chose cave 3d')
+                
     elif chosenCave == "2":
         print('you chose cave 1b')
         chosenCave = raw_input()
         if chosenCave == "1":
             print ('you chose cave 2c')
+            chosenCave = raw_input()
+            if chosenCave == "1":
+                print ('you chose cave 3e')
+            elif chosenCave == "2":
+                print ('you chose cave 3f')
         elif chosenCave == "2":
             print ('you chose cave 2d')
+            chosenCave = raw_input()
+            if chosenCave == "1":
+                print ('you chose cave 3g')
+            elif chosenCave == "2":
+                print ('you chose cave 3h')
 
 def main():
     
