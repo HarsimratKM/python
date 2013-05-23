@@ -23,12 +23,10 @@ def chooseCave():
     return cave
 
 def checkCave(chosenCave):
-    print ('You approach the cave...')
-    time.sleep(2)
-    print ('It is dark and spooky...')
-   
+    
     if chosenCave == "left":
         print ('You enter the next cave, theres a torch on the wall, you take it')
+        time.sleep(2)
         print ('You see another two exits from the room, which room do you go to? left or right?')
         chosenCave = raw_input()
         if chosenCave == "left":
@@ -36,9 +34,11 @@ def checkCave(chosenCave):
             chosenCave = raw_input()
             if chosenCave == "left":
                 print ('You go into the room......Its a dead end!')
+                time.sleep(2)
                 print ('Just as you think about turning back, the walls start crumbling down on you and you......')
             elif chosenCave == "right":
                 print ('You enter a room way bigger than the ones before, you go in deeper')
+                time.sleep(2)
                 print ('Suddenly, you hear a sound behind you, before you get the chance to turn back, you feel the hands that are about to snap your neck')
         elif chosenCave == "right":
             print ('You enter another room with another pile of bones in the center, there are right doors, left or right?')
@@ -47,8 +47,11 @@ def checkCave(chosenCave):
                 print ('You enter the room and get eaten to death by Zombies')
             elif chosenCave == "right":
                 print ('The room is narrow and long, you go deeper....')
+                time.sleep(2)
                 print ('You hear the sound of a car, you start running towards it')
+                time.sleep(2)
                 print ('You found the way out of the catacombs!!!!!!')
+                time.sleep(2)
                 print ('Congratulations, you win :)')
 
                 
