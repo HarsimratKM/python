@@ -1,8 +1,13 @@
 import time
 
 def displayIntro():
-    print ('choose a cave')
-    
+    print ('You are driving on a lonely road on your roadtrip')
+    time.sleep(2)
+    print ('The fog starts to thickens.......')
+    time.sleep(2)
+    print ('You slow down since you cant see anything')
+    time.sleep(2)
+    print ('the last thing you remember is your car crashing into a weird figure')
 def chooseCave():
     cave = ''
     while cave != '1' and cave != '2':
