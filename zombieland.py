@@ -1,6 +1,13 @@
+#Zombieland.py
+# Author: Harsimrat Kaur
+# Last Modified by: Hrsimrat Kaur
+#Date last Modified: 23rd May 2013
+#Program description: Zombieland game, 3 level decision, 7 negative outcomes, 1 positive
+
 import time
 
 def displayIntro():
+    #introductory text that sets the storyline for the game
     print ('You are driving on a lonely road on your roadtrip')
     time.sleep(2)
     print ('The fog starts to thickens.......')
@@ -10,6 +17,7 @@ def displayIntro():
     print ('the last thing you remember is your car crashing into a weird figure')
     time.sleep(2)
 def chooseCave():
+    #First level decision, lets the player choose the first cave, also sets more of the story
     cave = ''
     while cave != 'left' and cave != 'right':
         print ('You wake up in cave, the walls are all covereg in human skulls and bones, its the Catacombs')
@@ -30,6 +38,7 @@ def checkCave(chosenCave):
         print ('You see another two exits from the room, which room do you go to? left or right?')
         chosenCave = raw_input()
         if chosenCave == "left":
+            #nested if and elif statements take care of each decision making level
             print ('You enter another room and yet again, there are two doors in front of you, left or right?')
             chosenCave = raw_input()
             if chosenCave == "left":
@@ -87,6 +96,7 @@ def checkCave(chosenCave):
 
 def main():
     
+    #calling the main function, let's the use choose whether he wants to play again or not
     
     playAgain = 'yes'
     while playAgain == 'yes' or playAgain == 'y':
